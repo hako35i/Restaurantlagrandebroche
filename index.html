@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Grande Broche Lens - Restaurant & Spécialités</title>
+  <style>
+    :root {
+      --primary: #dc2626;
+      --primary-hover: #b91c1c;
+      --bg-dark: #111827;
+      --card-bg: #1f2937;
+      --text: #f9fafb;
+      --text-muted: #9ca3af;
+      --gold: #f59e0b;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text);
+      line-height: 1.6;
+      padding-bottom: 40px;
+    }
+
+    header {
+      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80') center/cover;
+      text-align: center;
+      padding: 60px 20px 40px 20px;
+      border-bottom: 3px solid var(--primary);
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      color: var(--text);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 8px;
+    }
+
+    header p {
+      color: var(--gold);
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 20px 16px;
+    }
+
+    .card {
+      background-color: var(--card-bg);
+      border-radius: 16px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    .card h2 {
+      color: var(--gold);
+      font-size: 1.3rem;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .menu-item {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 10px 0;
+    }
+
+    .menu-item:last-child {
+      border-bottom: none;
+    }
+
+    .menu-item .title {
+      font-weight: 600;
+    }
+
+    .menu-item .desc {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: 100%;
+      padding: 16px;
+      background-color: var(--primary);
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1rem;
+      border-radius: 12px;
+      margin-top: 10px;
+      transition: background-color 0.2s;
+    }
+
+    .btn:active {
+      background-color: var(--primary-hover);
+    }
+
+    .info-list {
+      list-style: none;
+    }
+
+    .info-list li {
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--text-muted);
+    }
+
+    .info-list strong {
+      color: var(--text);
+    }
+
+    footer {
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>La Grande Broche Lens</h1>
+    <p>Spécialités Grillades & Restauration Rapide</p>
+  </header>
+
+  <div class="container">
+
+    <!-- Bouton de commande / contact -->
+    <a href="tel:0321000000" class="btn">
+      📞 Commander par Téléphone
+    </a>
+
+    <br>
+
+    <!-- Informations pratiques -->
+    <div class="card">
+      <h2>📍 Informations & Horaires</h2>
+      <ul class="info-list">
+        <li>📍 <strong>Adresse :</strong> Lens (62300)</li>
+        <li>🕒 <strong>Horaires :</strong> Ouvert tous les jours</li>
+        <li>🛵 <strong>Services :</strong> Sur place, À emporter & Livraison</li>
+      </ul>
+    </div>
+
+    <!-- Carte / Menu -->
+    <div class="card">
+      <h2>🍽️ Notre Carte</h2>
+      
+      <div class="menu-item">
+        <div>
+          <div class="title">Sandwich Broche Maison</div>
+          <div class="desc">Viande grillée, crudités au choix, sauce maison</div>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <div>
+          <div class="title">Assiette Grillade Spéciale</div>
+          <div class="desc">Servie avec frites fraiches, salade et boisson</div>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <div>
+          <div class="title">Menus Étudiants / Formules</div>
+          <div class="desc">Sandwich + Frites + Boisson au choix</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>&copy; La Grande Broche Lens - Tous droits réservés</p>
+  </footer>
+
+</body>
+</html>
